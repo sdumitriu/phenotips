@@ -41,6 +41,106 @@
 "phenotype": [
   {
     "type"       : "section",
+    "title"      : "Pregnancy history",
+    "categories" : ["HP:0002686"],
+    "data"       : [
+      {"id"      : "HP:0012188", "title" : "Hyperemesis gravidarum (excessive vomiting)"},
+      {"id"      : "HP:0008071"},
+      {"id"      : "HP:0009800"},
+      {"id"      : "HP:0030244"},
+      {"id"      : "HP:0100622"},
+      {"id"      : "HP:0011438"},
+      {"id"      : "HP:0100603"},
+      {"id"      : "HP:0011436"}
+    ]
+  },
+  {
+    "type"       : "section",
+    "title"      : "Prenatal development",
+    "categories" : ["HP:0001197", "HP:0001511"],
+    "data"       : [
+      {"id"      : "HP:0001511"},
+      {"id"      : "HP:0001562"},
+      {"id"      : "HP:0001561"},
+      {"id"      : "HP:0001558"},
+      {"id"      : "HP:0010519"}
+    ]
+  },
+  {
+    "type"       : "section",
+    "title"      : "Delivery",
+    "categories" : ["HP:0001787", "HP:0001622"],
+    "data"       : [
+      {
+        "type"  : "conditionalSubsection",
+        "id"    : "HP:0001787",
+        "group_type" : "multi-select",
+        "title" : "Abnormal delivery (Non-NSVD)",
+        "data"  : [
+          {"id" : "HP:0030365"},
+          {"id" : "HP:0030369"},
+          {"id" : "HP:0001623"},
+          {"id" : "HP:0011410"},
+          {"id" : "HP:0011411"},
+          {"id" : "HP:0011412"},
+          {"id" : "HP:0030366"},
+          {"id" : "HP:0005268"}
+        ]
+      },
+      {"id" : "HP:0001622"}
+    ]
+  },
+  {
+    "type"       : "section",
+    "title"      : "Neonatal growth parameters",
+    "categories" : ["HP:0001507", "HP:0000240"],
+    "data"       : [
+      {
+        "type"   : "subsection",
+        "id"     : "HP:0004323",
+        "group_type" : "single-select",
+        "title"  : "Abnormal birth weight",
+        "data"   : [
+          {"id"  : "HP:0001518", "title" : "Small for gestational age (&lt;-2SD)"},
+          {"id"  : "HP:0001520", "title" : "Large for gestational age (&gt;+2SD)"}
+        ]
+      },
+      {
+        "type"   : "subsection",
+        "id"     : "HP:0000002",
+        "group_type" : "single-select",
+        "title"  : "Abnormal birth length",
+        "data"   : [
+          {"id"  : "HP:0003561", "title" : "Small birth length (&lt;-2SD)"},
+          {"id"  : "HP:0003517", "title" : "Large birth length (&gt;+2SD)"}
+        ]
+      },
+      {
+        "type"   : "subsection",
+        "id"     : "HP:0000240",
+        "group_type" : "single-select",
+        "title"  : "Abnormal head circumference at birth",
+        "data"   : [
+          {"id"  : "HP:0011451", "title" : "Congenital microcephaly (&lt;-3SD)"},
+          {"id"  : "HP:0004488", "title" : "Congenital macrocephaly (&gt;+2SD)"}
+        ]
+      }
+    ]
+  },
+  {
+    "type"       : "section",
+    "title"      : "Perinatal complications",
+    "categories" : ["HP:0000118"],
+    "data"       : [
+      {"id" : "HP:0002643"},
+      {"id" : "HP:0006579"},
+      {"id" : "HP:0002033"},
+      {"id" : "HP:0001998"},
+      {"id" : "HP:0040187"}
+    ]
+  },
+  {
+    "type"       : "section",
     "title"      : "Growth parameters",
     "categories" : ["HP:0001507", "HP:0000240"],
     "data"       : [
@@ -579,109 +679,6 @@
     "title"      : "Other",
     "categories" : ["HP:0000118"],
     "data"       : []
-  }
-],
-
-"prenatal_phenotype": [
-  {
-    "type"       : "section",
-    "title"      : "Pregnancy history",
-    "categories" : ["HP:0002686"],
-    "data"       : [
-      {"id"      : "HP:0012188", "title" : "Hyperemesis gravidarum (excessive vomiting)"},
-      {"id"      : "HP:0008071"},
-      {"id"      : "HP:0009800"},
-      {"id"      : "HP:0030244"},
-      {"id"      : "HP:0100622"},
-      {"id"      : "HP:0011438"},
-      {"id"      : "HP:0100603"},
-      {"id"      : "HP:0011436"}
-    ]
-  },
-  {
-    "type"       : "section",
-    "title"      : "Prenatal development",
-    "categories" : ["HP:0001197", "HP:0001511"],
-    "data"       : [
-      {"id"      : "HP:0001511"},
-      {"id"      : "HP:0001562"},
-      {"id"      : "HP:0001561"},
-      {"id"      : "HP:0001558"},
-      {"id"      : "HP:0010519"}
-    ]
-  },
-  {
-    "type"       : "section",
-    "title"      : "Delivery",
-    "categories" : ["HP:0001787", "HP:0001622"],
-    "data"       : [
-      {
-        "type"  : "conditionalSubsection",
-        "id"    : "HP:0001787",
-        "group_type" : "multi-select",
-        "title" : "Abnormal delivery (Non-NSVD)",
-        "data"  : [
-          {"id" : "HP:0030365"},
-          {"id" : "HP:0030369"},
-          {"id" : "HP:0001623"},
-          {"id" : "HP:0011410"},
-          {"id" : "HP:0011411"},
-          {"id" : "HP:0011412"},
-          {"id" : "HP:0030366"},
-          {"id" : "HP:0005268"}
-        ]
-      },
-      {"id" : "HP:0001622"}
-    ]
-  },
-  {
-    "type"       : "section",
-    "title"      : "Neonatal growth parameters",
-    "categories" : ["HP:0001507", "HP:0000240"],
-    "data"       : [
-      {
-        "type"   : "subsection",
-        "id"     : "HP:0004323",
-        "group_type" : "single-select",
-        "title"  : "Abnormal birth weight",
-        "data"   : [
-          {"id"  : "HP:0001518", "title" : "Small for gestational age (&lt;-2SD)"},
-          {"id"  : "HP:0001520", "title" : "Large for gestational age (&gt;+2SD)"}
-        ]
-      },
-      {
-        "type"   : "subsection",
-        "id"     : "HP:0000002",
-        "group_type" : "single-select",
-        "title"  : "Abnormal birth length",
-        "data"   : [
-          {"id"  : "HP:0003561", "title" : "Small birth length (&lt;-2SD)"},
-          {"id"  : "HP:0003517", "title" : "Large birth length (&gt;+2SD)"}
-        ]
-      },
-      {
-        "type"   : "subsection",
-        "id"     : "HP:0000240",
-        "group_type" : "single-select",
-        "title"  : "Abnormal head circumference at birth",
-        "data"   : [
-          {"id"  : "HP:0011451", "title" : "Congenital microcephaly (&lt;-3SD)"},
-          {"id"  : "HP:0004488", "title" : "Congenital macrocephaly (&gt;+2SD)"}
-        ]
-      }
-    ]
-  },
-  {
-    "type"       : "section",
-    "title"      : "Perinatal complications",
-    "categories" : ["HP:0000118"],
-    "data"       : [
-      {"id" : "HP:0002643"},
-      {"id" : "HP:0006579"},
-      {"id" : "HP:0002033"},
-      {"id" : "HP:0001998"},
-      {"id" : "HP:0040187"}
-    ]
   }
 ]}</content>
   <object>
